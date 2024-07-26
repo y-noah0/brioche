@@ -1,0 +1,109 @@
+.header {
+    margin: 6% 6%;
+    display: flex;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: var(--detail-font);
+    letter-spacing: 0.04em;
+    font-size: 40px;
+    color: var(--theme-color);
+}
+
+h4 {
+    font-family: Baskerville;
+}
+
+.button {
+    margin-top: 30px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(187, 165, 110);
+    border-radius: 10px;
+    transition: ease-in 150ms;
+    color: var(--theme-color);
+}
+
+.button:hover {
+    background-color: rgb(187, 165, 110);
+    border-color: rgb(187, 165, 110);
+    color: #000000;
+}
+
+.image_container {
+    position: relative; /* Ensure the pseudo-elements are positioned relative to the container */
+    width: 50%;
+}
+
+.image_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.image_container::before,
+.image_container::after {
+    content: '';
+    position: absolute;
+    border: 5px solid rgb(187, 165, 110); /* Adjust border color and size as needed */
+}
+
+.image_container::before {
+    right: 5px;
+    width: 50%;
+    height: 50%;
+    border-width: 0 10px 3px 0;
+    bottom: 0%;
+}
+
+.image_container::after {
+    
+    left: 5px;
+    width: 50%;
+    height: 50%;
+    border-width: 3px 0 0 10px;
+}
+.text_container {
+    width: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .header {
+        filter: saturate(200%);
+    }
+    .image_container {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .image_container {
+        display: none;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .text_container {
+        width: 100%;
+        padding: 3% 5%;
+        border-radius: 10px;
+        background: linear-gradient(45deg, rgba(41, 41, 41, 0.151), rgba(82, 81, 81, 0.205), rgba(56, 56, 56, 0.151));
+    }
+    .header {
+        background: url('../../assets/Images/header_image.jpeg') no-repeat;
+        background-blend-mode: hard-light;
+        background-size: contain;
+        background-position-y: bottom;
+        filter: saturate(150%);
+        margin: 0px;
+    }
+    p {
+        font-size: 15px;
+    }
+}

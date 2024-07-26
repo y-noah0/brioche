@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Cormorant Upright';
+    margin-top: 50px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/Images/about_background_image.jpg') no-repeat center center/cover;
+    opacity: 0.15;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin: 7% 8%;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.image_container img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    transform: rotateZ(0deg);
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    opacity: 0.5;
+    align-content: center;
+    z-index: -1;
+}
+
+.image_container {
+    display: flex;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+    text-align: right;
+}
+
+
+
+button {
+    margin-top: 30px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(187, 165, 110);
+    border-radius: 10px;
+    transition: ease-in 150ms;
+    color: var(--theme-color);
+}
+
+button:hover {
+    background-color: rgb(187, 165, 110);
+    color: #000000;
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2px 0px;
+        width: 80%;
+        padding: 4% 5%;
+    }
+    .about{
+        width: 45%;
+        text-align: right;
+    }
+    .image_container {
+        width: 45%;
+        display: flex;
+        margin: 0%;
+        height: 1%;
+    }
+    .image_container img {
+        position: static;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        transform: rotateZ(252deg);
+    }
+    .history{
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        filter: saturate(150%);
+    }
+    .about, .history{
+        text-align: center;
+    }
+}

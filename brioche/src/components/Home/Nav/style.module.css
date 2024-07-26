@@ -1,0 +1,137 @@
+.Navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5%;
+    transition: padding 0.5s linear;
+    overflow: hidden;
+}
+
+.Navigation_brand h1 {
+    font-size: 1.5rem;
+    color: var(--color);
+    transition: font-size 0.5s linear;
+}
+
+.Navigation_menu {
+    display: flex;
+    align-items: center;
+}
+
+.Navigation_link ul,
+.Navigation_social ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    transition: gap 0.5s linear;
+}
+
+.Navigation_link a{
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+    font-weight: 500;
+    transition: color 200ms linear;
+    cursor: pointer;
+}
+.Navigation_link a:hover{
+    color: var(--theme-color);
+}
+.Navigation_social a {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    font-weight: 500;
+    
+}
+
+.Navigation_social i {
+    font-size: 1.25rem;
+    transition: font-size 0.5s linear;
+}
+
+.burger_menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+.menu{
+    margin-top: 1px;
+}
+
+@media (max-width: 767px) {
+    .Navigation_menu,
+    .Navigation_social {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s;
+    }
+
+    .Navigation_menu.open {
+        max-height: 500px; /* Adjust this value based on your content */
+        opacity: 1;
+        visibility: visible;
+        color: aliceblue;
+    }
+
+    .burger_menu {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+        display: block;
+    }
+
+    .Navigation_link ul,
+    .Navigation_social ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Navigation {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .Navigation_brand h1 {
+        font-size: 1.8rem;
+    }
+
+    .Navigation_link ul {
+        gap: 1.5rem;
+    }
+
+    .Navigation_social {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s, max-height 0.5s ease;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Navigation {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .Navigation_brand h1 {
+        font-size: 2rem;
+    }
+
+    .Navigation_link ul,
+    .Navigation_social ul {
+        gap: 2.5rem;
+    }
+
+    .Navigation_social i {
+        font-size: 1.5rem;
+    }
+}
