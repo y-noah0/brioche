@@ -18,7 +18,7 @@ function Navigation() {
             <div className={`${style.Navigation_menu} ${isMenuOpen ? style.open : ''}`}>
                 <div className={style.Navigation_link}>
                     <ul>
-                        <li><NavLink to='/'>HOme</NavLink></li>
+                        <li><NavLink to='/'>Home</NavLink></li>
                         <li><NavLink to='about'>about</NavLink></li>
                         <li><a href="https://brioche.beehiiv.com/">Blog</a></li>
                         <li><a href="contact" >Contact Us</a></li>

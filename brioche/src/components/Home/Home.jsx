@@ -2,8 +2,8 @@ import About from "./About/About";
 import Navigation from "./Nav/Navigation";
 import Drinks from "./Drinks/drinks";
 import Header from "./Header/Header";
-import Contact from "./Contacts/contacts";
 import Description from "./Description/Description";
+ import Footer from "../Footer/Footer";
 
 
 function Home(){
@@ -13,8 +13,9 @@ function Home(){
             <Header />
             <Description />
             <Drinks />
-            <Contact />
             <About />
+            <Footer />
+
         </>
     )
 }

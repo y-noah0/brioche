@@ -1,6 +1,8 @@
+import Navigation from "../Home/Nav/Navigation";
 function AboutTab(){
     return(
-        <h1>about</h1>
+        <Navigation/>
+        
     )
 }
 export default AboutTab;

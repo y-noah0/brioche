@@ -5,6 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
+  filter: saturate(1.05);
   background-color: #000000;
 
   font-synthesis: none;
@@ -15,9 +16,6 @@
   --theme-color: rgb(187, 165, 110);
   --detail-font: baskeville;
   --title-font:'Cormorant Upright';
+
 }
-@media (max-width: 768px) {
-  *{
-    filter: saturate(1.05);
-  }
-}
+

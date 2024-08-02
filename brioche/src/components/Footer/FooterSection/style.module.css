@@ -1,0 +1,47 @@
+.footer {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    padding: 2rem 0;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .contactUs, .logo, .workingHours {
+    flex: 1;
+    text-align: center;
+    /* letter-spacing: 2px; */
+  }
+  
+  .logo h2 {
+    font-size: 3rem;
+    color: #e0c675;
+    margin-bottom: 1rem;
+  }
+  
+  .logo p {
+    font-style: italic;
+    max-width: 300px;
+    margin: 0 auto 1rem;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .socialIcons span {
+    cursor: pointer;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
