@@ -12,9 +12,9 @@ function Home(){
             <Navigation />
             <Header />
             <Description />
-            <About />
             <Drinks />
             <Contact />
+            <About />
         </>
     )
 }
