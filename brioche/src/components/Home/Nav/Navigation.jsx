@@ -19,7 +19,7 @@ function Navigation() {
                 <div className={style.Navigation_link}>
                     <ul>
                         <li><NavLink to='/'>Home</NavLink></li>
-                        <li><NavLink to='about'>about</NavLink></li>
+                        <li><NavLink to='about'>About</NavLink></li>
                         <li><a href="https://brioche.beehiiv.com/">Blog</a></li>
                         <li><a href="contact" >Contact Us</a></li>
                     </ul>

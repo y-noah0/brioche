@@ -7,11 +7,11 @@ function Footer() {
         <footer className={styles.footer}>
             <div className={styles.content}>
                 <div className={styles.contactUs}>
-                    <h4>Contact Us</h4>
-                    <p>Kacyiru, KG 543 Street, Kigali, Rwanda</p>
+                    <h3>Contact Us</h3>
+                    <p>+250 7884 404 82</p>
                     <p>Kagugu, KG 543 Street, Kigali, Rwanda</p>
-                    <p>Remera, KG 543 Street, Kigali, Rwanda</p>
-                    <p>view more</p>
+                    <p>info@brioche.com</p>
+                    <a href="#">view more</a>
                 </div>
                 <div className={styles.logo}>
                     <h2>Brioche</h2>
@@ -23,7 +23,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className={styles.workingHours}>
-                    <h4>Working Hours</h4>
+                    <h3>Working Hours</h3>
                     <p>Monday-Friday:</p>
                     <p>08:00 am -12:00 am</p>
                     <p>Saturday-Sunday:</p>
