@@ -13,13 +13,10 @@
   margin: 0 auto;
 }
 
-.contactUs, .logo {
+.contactUs, .logo, .workingHours {
   text-align: center;
   width: 100%;
   max-width: 300px;
-}
-.workingHours{
-  display: block;
 }
 
 .logo h2 {
