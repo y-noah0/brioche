@@ -40,7 +40,7 @@
     cursor: pointer;
 }
 
-.Navigation_link a:hover {
+.Navigation_link a:hover , .Navigation_link a:focus, .Navigation_link a:active{
     color: var(--theme-color);
 }
 
