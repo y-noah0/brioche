@@ -1,0 +1,116 @@
+/* AboutPage.module.css */
+.container {
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navLink:hover {
+    color: #eab308;
+  }
+  
+  .menuButton {
+    background-color: #eab308;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .main {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+  
+  .sectionTitle {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #eab308;
+  }
+  
+  .storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  .paragraph {
+    margin-bottom: 1.5rem;
+  }
+  
+  .missionBox {
+    background: linear-gradient(45deg, rgba(46, 46, 46, 0.356), rgba(82, 81, 81, 0.568), rgba(56, 56, 56, 0.521));;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .missionTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #eab308;
+  }
+  
+  .missionList {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .missionList li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .featuresSection {
+    margin-top: 4rem;
+  }
+  
+  .featuresTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #eab308;
+  }
+  
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .featureCard {
+    background-color: #111827;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .featureIcon {
+    color: #eab308;
+    margin-bottom: 1rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .storyGrid,
+    .featuresGrid {
+      grid-template-columns: 1fr;
+    }
+  }
